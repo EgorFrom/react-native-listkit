@@ -1,0 +1,2 @@
+github "Instagram/IGListKit" ~> 3.0
+github "SDWebImage/SDWebImage" ~> 5.2.0
