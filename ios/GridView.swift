@@ -15,6 +15,10 @@ final class GridView: UIView {
 
   @objc var onSectionEndReached: RCTDirectEventBlock?
 
+  @objc func getCount (_ callback: RCTResponseSenderBlock) {
+    callback ([4])
+  }
+
   // MARK: - Properties
 
   let bridge: RCTBridge

@@ -17,4 +17,9 @@ RCT_EXPORT_VIEW_PROPERTY(onSectionEndReached, RCTDirectEventBlock);
   return [[RNLGridView alloc] initWithBridge:self.bridge];
 }
 
+RCT_EXPORT_METHOD(getCount: (RCTResponseSenderBlock)callback) {
+  NSArray *events = @[@"value1",  @"value2"];
+  callback(@[[NSNull null], events]);
+}
+
 @end

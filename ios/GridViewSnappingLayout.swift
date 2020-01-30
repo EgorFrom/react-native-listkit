@@ -28,11 +28,9 @@ class GridViewSnappingLayout: ListCollectionViewLayout {
     switch velocity {
     case .some(let velocity) where velocity.x < -flickVelocity:
       let xOffset = max(proposedOffset.x, collectionView.contentOffset.x - pageSize)
-//      print("egor xOffset_1", xOffset)
       interpolatedOffset = CGPoint(x: xOffset, y: 0)
     case .some(let velocity) where velocity.x > flickVelocity:
       let xOffset = min(proposedOffset.x, collectionView.contentOffset.x + pageSize)
-//      print("egor xOffset_2", xOffset)
       interpolatedOffset = CGPoint(x: xOffset, y: 0)
     default:
       interpolatedOffset = proposedOffset
@@ -58,13 +56,10 @@ class GridViewSnappingLayout: ListCollectionViewLayout {
       .sorted(by: { distance($0) < distance($1) })
       .first
       else {
-//        print("egor else interpolatedOffset", interpolatedOffset)
         return interpolatedOffset
       }
-//    print("egor attributesForSnapItem", attributesForSnapItem)
     switch itemAlignmentEdge {
     case .left:
-      print("it is exit")
       currentOffsetX = attributesForSnapItem.frame.minX - collectionView.contentInset.left
       return CGPoint(
         x: attributesForSnapItem.frame.minX - collectionView.contentInset.left,
@@ -91,10 +86,11 @@ class GridViewSnappingLayout: ListCollectionViewLayout {
     forProposedContentOffset proposedContentOffset: CGPoint
   ) -> CGPoint {
     let proposedPoint = super.targetContentOffset(forProposedContentOffset: proposedContentOffset)
-//    print("egor currentOffsetX", currentOffsetX)
-//    print("egor proposedPoint", proposedPoint)
-//    print("egor targetOffset", targetOffset(for: proposedPoint))
-    return targetOffset(for: gainConstant(proposedPoint: proposedPoint))
+    let offset = targetOffset(for: gainConstant(proposedPoint: proposedPoint))
+    let width = UIScreen.main.bounds.width
+    let currentPage = Int(ceil(offset.x/width))
+    swipe(currentSlide: currentPage + 1)
+    return offset
   }
 
   override func targetContentOffset(
@@ -105,9 +101,14 @@ class GridViewSnappingLayout: ListCollectionViewLayout {
       forProposedContentOffset: proposedContentOffset,
       withScrollingVelocity: velocity
     )
-//    print("egor currentOffsetX", currentOffsetX)
-//    print("egor velocity", velocity, "proposedPoint", proposedPoint)
-//    print("egor targetOffset", targetOffset(for: proposedPoint, velocity: velocity))
-    return targetOffset(for: gainConstant(proposedPoint: proposedPoint), velocity: CGPoint(x: CGFloat(Double(velocity.x) * 1.5), y: velocity.y))
+    let offset = targetOffset(for: gainConstant(proposedPoint: proposedPoint), velocity: CGPoint(x: CGFloat(Double(velocity.x) * 1.5), y: velocity.y))
+    let width = UIScreen.main.bounds.width
+    let currentPage = Int(ceil(offset.x/width))
+    swipe(currentSlide: currentPage + 1)
+    return offset
+  }
+
+  @objc private func swipe(currentSlide: NSInteger) {
+    EventEmitter.sharedInstance.dispatch(name: "Swipe", body: currentSlide)
   }
 }

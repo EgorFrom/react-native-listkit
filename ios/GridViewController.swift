@@ -28,13 +28,13 @@ final class GridViewController: UIViewController {
 
   // MARK: IGListKit
 
-  fileprivate lazy var adapter: ListAdapter = {
+  lazy var adapter: ListAdapter = {
     return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
   }()
 
   // MARK: Views
 
-  fileprivate let collectionView: UICollectionView = {
+  let collectionView: UICollectionView = {
     let layout = GridViewSnappingLayout(
       stickyHeaders: false,
       scrollDirection: .horizontal,
@@ -46,7 +46,6 @@ final class GridViewController: UIViewController {
     collectionView.backgroundColor = .gray
     collectionView.alwaysBounceHorizontal = false
     collectionView.decelerationRate = .fast
-    collectionView.decelerationRate = UIScrollView.DecelerationRate(rawValue: CGFloat(0.01))
     // collectionView.contentInset = HorizontalSectionController.Insets.containerContentInset
     return collectionView
   }()
@@ -57,7 +56,6 @@ final class GridViewController: UIViewController {
     super.viewDidLoad()
 
     view.addSubview(collectionView)
-//    print("hmm", sections.first.height)
     if #available(iOS 11.0, *) {
       NSLayoutConstraint.activate([
         collectionView.heightAnchor.constraint(equalToConstant: viewHeight),
@@ -91,18 +89,14 @@ final class GridViewController: UIViewController {
 
 extension GridViewController: ListAdapterDataSource {
   func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-//    let image = UIImageView(image: UIImage(named: "first"))
-//    let image =  ImageViewModel(bridge: bridge, url: "frist")
     return [
       GridViewModel(columns: sections.map { section in
-        print("sectionsection.imageLink", section.imageLink)
         let viewModel = ColumnViewModel(
           viewController: self,
           identifier: section.identifier,
           imageLink: section.imageLink,
           viewHeight: CGFloat(truncating: NumberFormatter().number(from: section.height) ?? 274)
         )
-//        viewModel.loadingDelegate = loadingDelegate
         return viewModel
     })]
   }

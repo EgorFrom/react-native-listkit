@@ -43,18 +43,15 @@
 		2D64E9FC21CC464D00D22C52 /* GridSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64E9FB21CC464D00D22C52 /* GridSectionController.swift */; };
 		2D64E9FE21CC488700D22C52 /* ColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64E9FD21CC488700D22C52 /* ColumnCell.swift */; };
 		2D64EA0121CC492300D22C52 /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA0021CC492300D22C52 /* CellReusable.swift */; };
-		2D64EA0321CC4C7400D22C52 /* ReactViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA0221CC4C7400D22C52 /* ReactViewCell.swift */; };
-		2D64EA0521CC4CE700D22C52 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA0421CC4CE700D22C52 /* LabelView.swift */; };
 		2D64EA0721CC4D3300D22C52 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA0621CC4D3300D22C52 /* GridViewModel.swift */; };
 		2D64EA0921CC4D3E00D22C52 /* ColumnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA0821CC4D3E00D22C52 /* ColumnViewModel.swift */; };
-		2D64EA0D21CC4DA900D22C52 /* ReactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA0C21CC4DA900D22C52 /* ReactViewModel.swift */; };
-		2D64EA0F21CC50DD00D22C52 /* ColumnSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA0E21CC50DD00D22C52 /* ColumnSectionController.swift */; };
 		2D64EA1321CD537600D22C52 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA1221CD537600D22C52 /* Section.swift */; };
-		2D64EA1521CD53A500D22C52 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA1421CD53A500D22C52 /* Item.swift */; };
 		2D64EA1821CD809A00D22C52 /* GridViewSectionLoadingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64EA1721CD809A00D22C52 /* GridViewSectionLoadingDelegate.swift */; };
 		2DCD954D1E0B4F2C00145EB5 /* RNListKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNListKitTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		352626EE23D711CD0041BE9F /* ImageVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352626ED23D711CD0041BE9F /* ImageVIewModel.swift */; };
+		350958FB23E02C1E00990F12 /* RNLEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 350958FA23E02C1E00990F12 /* RNLEventEmitter.m */; };
+		350958FD23E02C4C00990F12 /* EventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350958FC23E02C4C00990F12 /* EventEmitter.swift */; };
+		350958FF23E02CB100990F12 /* RNLEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350958FE23E02CB100990F12 /* RNLEventEmitter.swift */; };
 		3526274B23D84B550041BE9F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3526272223D84B540041BE9F /* SDWebImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3526274E23D84B550041BE9F /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3526274A23D84B550041BE9F /* SDWebImageMapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -369,16 +366,13 @@
 		2D64E9FB21CC464D00D22C52 /* GridSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSectionController.swift; sourceTree = "<group>"; };
 		2D64E9FD21CC488700D22C52 /* ColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnCell.swift; sourceTree = "<group>"; };
 		2D64EA0021CC492300D22C52 /* CellReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
-		2D64EA0221CC4C7400D22C52 /* ReactViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactViewCell.swift; sourceTree = "<group>"; };
-		2D64EA0421CC4CE700D22C52 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		2D64EA0621CC4D3300D22C52 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		2D64EA0821CC4D3E00D22C52 /* ColumnViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnViewModel.swift; sourceTree = "<group>"; };
-		2D64EA0C21CC4DA900D22C52 /* ReactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactViewModel.swift; sourceTree = "<group>"; };
-		2D64EA0E21CC50DD00D22C52 /* ColumnSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnSectionController.swift; sourceTree = "<group>"; };
 		2D64EA1221CD537600D22C52 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		2D64EA1421CD53A500D22C52 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2D64EA1721CD809A00D22C52 /* GridViewSectionLoadingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewSectionLoadingDelegate.swift; sourceTree = "<group>"; };
-		352626ED23D711CD0041BE9F /* ImageVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVIewModel.swift; sourceTree = "<group>"; };
+		350958FA23E02C1E00990F12 /* RNLEventEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNLEventEmitter.m; sourceTree = "<group>"; };
+		350958FC23E02C4C00990F12 /* EventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEmitter.swift; sourceTree = "<group>"; };
+		350958FE23E02CB100990F12 /* RNLEventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNLEventEmitter.swift; sourceTree = "<group>"; };
 		3526272223D84B540041BE9F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		3526274A23D84B550041BE9F /* SDWebImageMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImageMapKit.framework; path = Carthage/Build/iOS/SDWebImageMapKit.framework; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
@@ -581,6 +575,7 @@
 				2D64E9CC21CC3AC400D22C52 /* GridViewController.swift */,
 				2D64E9CE21CC3BDA00D22C52 /* GridViewSnappingLayout.swift */,
 				2D64EA1721CD809A00D22C52 /* GridViewSectionLoadingDelegate.swift */,
+				3509590023E0395200990F12 /* EventEmitter */,
 				2D64EA1621CD801700D22C52 /* Models */,
 				2D64E9FF21CC488B00D22C52 /* Cells */,
 				2D64EA0B21CC4D9400D22C52 /* Misc Utils */,
@@ -594,7 +589,6 @@
 			isa = PBXGroup;
 			children = (
 				2D64E9FB21CC464D00D22C52 /* GridSectionController.swift */,
-				2D64EA0E21CC50DD00D22C52 /* ColumnSectionController.swift */,
 			);
 			path = "Section Controllers";
 			sourceTree = "<group>";
@@ -603,7 +597,6 @@
 			isa = PBXGroup;
 			children = (
 				2D64E9FD21CC488700D22C52 /* ColumnCell.swift */,
-				2D64EA0221CC4C7400D22C52 /* ReactViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -613,8 +606,6 @@
 			children = (
 				2D64EA0621CC4D3300D22C52 /* GridViewModel.swift */,
 				2D64EA0821CC4D3E00D22C52 /* ColumnViewModel.swift */,
-				2D64EA0C21CC4DA900D22C52 /* ReactViewModel.swift */,
-				352626ED23D711CD0041BE9F /* ImageVIewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -623,7 +614,6 @@
 			isa = PBXGroup;
 			children = (
 				2D64EA0021CC492300D22C52 /* CellReusable.swift */,
-				2D64EA0421CC4CE700D22C52 /* LabelView.swift */,
 			);
 			path = "Misc Utils";
 			sourceTree = "<group>";
@@ -631,10 +621,19 @@
 		2D64EA1621CD801700D22C52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2D64EA1421CD53A500D22C52 /* Item.swift */,
 				2D64EA1221CD537600D22C52 /* Section.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3509590023E0395200990F12 /* EventEmitter */ = {
+			isa = PBXGroup;
+			children = (
+				350958FC23E02C4C00990F12 /* EventEmitter.swift */,
+				350958FE23E02CB100990F12 /* RNLEventEmitter.swift */,
+				350958FA23E02C1E00990F12 /* RNLEventEmitter.m */,
+			);
+			path = EventEmitter;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -1257,22 +1256,19 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				2D64E9FE21CC488700D22C52 /* ColumnCell.swift in Sources */,
-				2D64EA1521CD53A500D22C52 /* Item.swift in Sources */,
 				2D64E9FC21CC464D00D22C52 /* GridSectionController.swift in Sources */,
 				2D64E9CD21CC3AC400D22C52 /* GridViewController.swift in Sources */,
-				2D64EA0D21CC4DA900D22C52 /* ReactViewModel.swift in Sources */,
+				350958FF23E02CB100990F12 /* RNLEventEmitter.swift in Sources */,
 				2D64EA1821CD809A00D22C52 /* GridViewSectionLoadingDelegate.swift in Sources */,
+				350958FD23E02C4C00990F12 /* EventEmitter.swift in Sources */,
 				2D64E9CF21CC3BDA00D22C52 /* GridViewSnappingLayout.swift in Sources */,
 				2D64E9B221CC2D3C00D22C52 /* GridView.swift in Sources */,
 				2D64EA0921CC4D3E00D22C52 /* ColumnViewModel.swift in Sources */,
-				2D64EA0321CC4C7400D22C52 /* ReactViewCell.swift in Sources */,
-				2D64EA0521CC4CE700D22C52 /* LabelView.swift in Sources */,
-				2D64EA0F21CC50DD00D22C52 /* ColumnSectionController.swift in Sources */,
+				350958FB23E02C1E00990F12 /* RNLEventEmitter.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				2D64E9B521CC383D00D22C52 /* RNLGridViewManager.m in Sources */,
 				2D64EA1321CD537600D22C52 /* Section.swift in Sources */,
 				2D64EA0121CC492300D22C52 /* CellReusable.swift in Sources */,
-				352626EE23D711CD0041BE9F /* ImageVIewModel.swift in Sources */,
 				2D64EA0721CC4D3300D22C52 /* GridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1388,6 +1384,7 @@
 				PRODUCT_NAME = RNListKit;
 				SWIFT_OBJC_BRIDGING_HEADER = "RNListKit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1415,6 +1412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNListKit;
 				SWIFT_OBJC_BRIDGING_HEADER = "RNListKit-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

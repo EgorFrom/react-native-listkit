@@ -4,15 +4,16 @@ import SDWebImage
 
 final class ColumnCell: UICollectionViewCell, CellReusable {
   let collectionView: UICollectionView
-  let image = UIImageView(frame: .zero)
+  let imageView = UIImageView(frame: .zero)
   private let activityIndicator = UIActivityIndicatorView()
 
   override func prepareForReuse() {
     super.prepareForReuse()
+    activityIndicator.startAnimating()
     collectionView.contentOffset = .zero
     collectionView.dataSource = nil
     collectionView.delegate = nil
-    image.image = nil
+    imageView.image = nil
   }
 
   // MARK: - Initializers
@@ -26,14 +27,24 @@ final class ColumnCell: UICollectionViewCell, CellReusable {
     collectionView.translatesAutoresizingMaskIntoConstraints = false
     collectionView.alwaysBounceVertical = false
     contentView.addSubview(collectionView)
+    
+    activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+    activityIndicator.startAnimating()
+    contentView.addSubview(activityIndicator)
+    activityIndicator.color = .red
 
-    image.translatesAutoresizingMaskIntoConstraints = false
-    image.contentMode = .scaleToFill
-    contentView.addSubview(image)
+    imageView.translatesAutoresizingMaskIntoConstraints = false
+    imageView.isUserInteractionEnabled = true
+    imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTapped)))
+
+    imageView.contentMode = .scaleToFill
+    contentView.addSubview(imageView)
 
     backgroundColor = .white
 
     NSLayoutConstraint.activate([
+      activityIndicator.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+      activityIndicator.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
       collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
       collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
       collectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor)
@@ -42,6 +53,10 @@ final class ColumnCell: UICollectionViewCell, CellReusable {
 
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
+  }
+
+  @objc private func imageTapped(_ recognizer: UITapGestureRecognizer) {
+    EventEmitter.sharedInstance.dispatch(name: "OpenImage", body: 1)
   }
 
   // MARK: - UICollectionViewCell
@@ -63,19 +78,23 @@ final class ColumnCell: UICollectionViewCell, CellReusable {
 extension ColumnCell: ListBindable {
   func bindViewModel(_ viewModel: Any) {
     guard let viewModel = viewModel as? ColumnViewModel else { fatalError() }
-    print("imageLink", viewModel.imageLink)
 
-    image.sd_setImage(with: URL(string: viewModel.imageLink), placeholderImage: UIImage(named: "first"))
+    imageView.sd_setImage(
+      with: URL(string: viewModel.imageLink),
+      placeholderImage: nil,
+      options: SDWebImageOptions(rawValue: 0),
+      completed: { (image, error, cacheType, imageURL) in
+        
+        guard let image = image else { return }
+        self.imageView.image = image.resized(toWidth: UIScreen.main.bounds.width, toHeight: viewModel.viewHeight)
+    }
+    )
 
-    let newImage: UIImage = image.image?.resized(toWidth: UIScreen.main.bounds.width, toHeight: viewModel.viewHeight) ?? UIImage(named: "first")!
-    print("what it is", newImage.size)
+//    let newImage: UIImage = image.image?.resized(toWidth: UIScreen.main.bounds.width, toHeight: viewModel.viewHeight) ?? UIImage(named: "first")!
 
-    let transformer = SDImageResizingTransformer(size: newImage.size, scaleMode: .fill)
-    image.sd_setImage(with: URL(string: viewModel.imageLink), placeholderImage: nil, context: [.imageTransformer: transformer])
+//    let transformer = SDImageResizingTransformer(size: newImage.size, scaleMode: .fill)
+//    image.sd_setImage(with: URL(string: viewModel.imageLink), placeholderImage: nil, context: [.imageTransformer: transformer])
 
-    print("viewModelviewModel", viewModel)
-    print("collectionViewcollectionView1", collectionView.numberOfItems(inSection: 0))
-    print("collectionViewcollectionView2", collectionView.numberOfSections)
     viewModel.adapter.collectionView = collectionView
   }
 }
