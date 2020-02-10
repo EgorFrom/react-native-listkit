@@ -3673,7 +3673,7 @@ metro-react-native-babel-preset@0.48.5:
     metro-babel7-plugin-react-transform "0.48.5"
     react-transform-hmr "^1.0.4"
 
-metro-react-native-babel-preset@^0.51.0:
+metro-react-native-babel-preset@^0.51.1:
   version "0.51.1"
   resolved "https://registry.yarnpkg.com/metro-react-native-babel-preset/-/metro-react-native-babel-preset-0.51.1.tgz#44aeeedfea37f7c2ab8f6f273fa71b90fe65f089"
   integrity sha512-e9tsYDFhU70gar0jQWcZXRPJVCv4k7tEs6Pm74wXO2OO/T1MEumbvniDIGwGG8bG8RUnYdHhjcaiub2Vc5BRWw==
