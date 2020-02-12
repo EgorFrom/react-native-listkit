@@ -3,5 +3,4 @@ use_modular_headers!
 
 target 'RNSwiper' do
   pod 'IGListKit', '~> 3.0'
-  pod 'SDWebImage', '~> 5.2.0'
 end
