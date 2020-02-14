@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		355D539C23F3AAC800AA8BD4 /* libIGListKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 355D535E23F2D70400AA8BD4 /* libIGListKit.a */; };
-		355D539E23F3AACC00AA8BD4 /* libPods-RNSwiper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 355D539D23F3AACC00AA8BD4 /* libPods-RNSwiper.a */; };
-		355D53A023F3AACE00AA8BD4 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 355D539F23F3AACE00AA8BD4 /* libSDWebImage.a */; };
 		355D53A123F3AF7600AA8BD4 /* EventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B326D23F28373002D20BF /* EventEmitter.swift */; };
 		355D53A223F3AF7700AA8BD4 /* RNLEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B326C23F28373002D20BF /* RNLEventEmitter.swift */; };
 		355D53A323F3AF7900AA8BD4 /* RNLEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 351B326B23F28373002D20BF /* RNLEventEmitter.m */; };
@@ -162,7 +159,7 @@
 			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
 			remoteInfo = "privatedata-tvOS";
 		};
-		351FE31323F1244800470153 /* PBXContainerItemProxy */ = {
+		35667CBD23F573DF001A5990 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 1;
@@ -329,7 +326,6 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNListKit/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D64E9B021CC2D3B00D22C52 /* RNListKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNListKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		351B326B23F28373002D20BF /* RNLEventEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNLEventEmitter.m; sourceTree = "<group>"; };
 		351B326C23F28373002D20BF /* RNLEventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNLEventEmitter.swift; sourceTree = "<group>"; };
 		351B326D23F28373002D20BF /* EventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEmitter.swift; sourceTree = "<group>"; };
@@ -475,9 +471,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				355D539C23F3AAC800AA8BD4 /* libIGListKit.a in Frameworks */,
-				355D53A023F3AACE00AA8BD4 /* libSDWebImage.a in Frameworks */,
-				355D539E23F3AACC00AA8BD4 /* libPods-RNSwiper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +565,6 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
-				2D64E9B021CC2D3B00D22C52 /* RNListKit-Bridging-Header.h */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = RNListKit;
@@ -939,7 +931,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				351FE31423F1244800470153 /* PBXTargetDependency */,
+				35667CBE23F573DF001A5990 /* PBXTargetDependency */,
 			);
 			name = RNSwiper;
 			productName = RNSwiper;
@@ -1347,10 +1339,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		351FE31423F1244800470153 /* PBXTargetDependency */ = {
+		35667CBE23F573DF001A5990 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = React;
-			targetProxy = 351FE31323F1244800470153 /* PBXContainerItemProxy */;
+			targetProxy = 35667CBD23F573DF001A5990 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
