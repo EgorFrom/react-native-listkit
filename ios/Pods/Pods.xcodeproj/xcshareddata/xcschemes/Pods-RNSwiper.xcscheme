@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "837C8A446D11214A6D2ACB220C9605DD"
-               BuildableName = "libPods-RNSwiper.a"
+               BuildableName = "Pods_RNSwiper.framework"
                BlueprintName = "Pods-RNSwiper"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "837C8A446D11214A6D2ACB220C9605DD"
-            BuildableName = "libPods-RNSwiper.a"
+            BuildableName = "Pods_RNSwiper.framework"
             BlueprintName = "Pods-RNSwiper"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

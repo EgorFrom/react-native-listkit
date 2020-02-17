@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EA5EF0FCC2B8C73E0CC64BC /* Pods_RNSwiper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A613BED983A6AAC3991D6673 /* Pods_RNSwiper.framework */; };
 		355D53A123F3AF7600AA8BD4 /* EventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B326D23F28373002D20BF /* EventEmitter.swift */; };
 		355D53A223F3AF7700AA8BD4 /* RNLEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B326C23F28373002D20BF /* RNLEventEmitter.swift */; };
 		355D53A323F3AF7900AA8BD4 /* RNLEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 351B326B23F28373002D20BF /* RNLEventEmitter.m */; };
@@ -441,7 +442,6 @@
 		355D533823F2D66100AA8BD4 /* IGListAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGListAdapter.h; sourceTree = "<group>"; };
 		355D533923F2D66100AA8BD4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		355D535E23F2D70400AA8BD4 /* libIGListKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIGListKit.a; path = "../../../Library/Developer/Xcode/DerivedData/RNListKit-eweiskscwendrbceqrplcbcuhgcu/Build/Products/Debug-iphonesimulator/IGListKit/libIGListKit.a"; sourceTree = "<group>"; };
-		355D539D23F3AACC00AA8BD4 /* libPods-RNSwiper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-RNSwiper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		355D539F23F3AACE00AA8BD4 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		356363E423F10B5E00889783 /* libRNSwiper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNSwiper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		356363E623F10B5E00889783 /* RNSwiper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNSwiper.swift; sourceTree = "<group>"; };
@@ -462,6 +462,7 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		A613BED983A6AAC3991D6673 /* Pods_RNSwiper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNSwiper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ECB9DC78746A73D1A9A8EDD2 /* Pods-RNSwiper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiper.debug.xcconfig"; path = "Target Support Files/Pods-RNSwiper/Pods-RNSwiper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -471,6 +472,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA5EF0FCC2B8C73E0CC64BC /* Pods_RNSwiper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,13 +599,13 @@
 			isa = PBXGroup;
 			children = (
 				355D535E23F2D70400AA8BD4 /* libIGListKit.a */,
-				355D539D23F3AACC00AA8BD4 /* libPods-RNSwiper.a */,
 				355D539F23F3AACE00AA8BD4 /* libSDWebImage.a */,
 				355D52C823F2D66100AA8BD4 /* IGListKit */,
 				3530718023F271F70006E87B /* libSDWebImage.a */,
 				3530717E23F271DE0006E87B /* libIGListKit.a */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				4A505ADF5D55CC5DF402AB2C /* libPods-RNSwiper.a */,
+				A613BED983A6AAC3991D6673 /* Pods_RNSwiper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
