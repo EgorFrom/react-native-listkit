@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35A3C4DF23FA745100F2E2B2 /* ColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4CA23FA745100F2E2B2 /* ColumnCell.swift */; };
+		35A3C4E023FA745100F2E2B2 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4CC23FA745100F2E2B2 /* GridViewModel.swift */; };
+		35A3C4E123FA745100F2E2B2 /* ColumnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4CD23FA745100F2E2B2 /* ColumnViewModel.swift */; };
+		35A3C4E223FA745100F2E2B2 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4CE23FA745100F2E2B2 /* GridViewController.swift */; };
+		35A3C4E323FA745100F2E2B2 /* GridViewSnappingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4CF23FA745100F2E2B2 /* GridViewSnappingLayout.swift */; };
+		35A3C4E423FA745100F2E2B2 /* GridSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4D123FA745100F2E2B2 /* GridSectionController.swift */; };
+		35A3C4E523FA745100F2E2B2 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4D323FA745100F2E2B2 /* Section.swift */; };
+		35A3C4E623FA745100F2E2B2 /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4D523FA745100F2E2B2 /* CellReusable.swift */; };
+		35A3C4E723FA745100F2E2B2 /* RNLGridViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4D623FA745100F2E2B2 /* RNLGridViewManager.m */; };
+		35A3C4E823FA745100F2E2B2 /* GridViewSectionLoadingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4D723FA745100F2E2B2 /* GridViewSectionLoadingDelegate.swift */; };
+		35A3C4E923FA745100F2E2B2 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4D923FA745100F2E2B2 /* GridView.swift */; };
+		35A3C4EA23FA745100F2E2B2 /* RNLEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4DB23FA745100F2E2B2 /* RNLEventEmitter.m */; };
+		35A3C4EB23FA745100F2E2B2 /* RNLEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4DC23FA745100F2E2B2 /* RNLEventEmitter.swift */; };
+		35A3C4EC23FA745100F2E2B2 /* EventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4DD23FA745100F2E2B2 /* EventEmitter.swift */; };
+		35A3C4ED23FA745100F2E2B2 /* RNSwiper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4DE23FA745100F2E2B2 /* RNSwiper.swift */; };
+		B752CCBFC7B1FC6CD66311DF /* libPods-RNSwiper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C7DC5EBEC6DF13D4069A71 /* libPods-RNSwiper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35EA51D823FA71C2007022C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		102DD85F9FCFDEBDCACE887C /* Pods-RNSwiper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiper.release.xcconfig"; path = "Target Support Files/Pods-RNSwiper/Pods-RNSwiper.release.xcconfig"; sourceTree = "<group>"; };
+		35A3C4CA23FA745100F2E2B2 /* ColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCell.swift; sourceTree = "<group>"; };
+		35A3C4CC23FA745100F2E2B2 /* GridViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
+		35A3C4CD23FA745100F2E2B2 /* ColumnViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnViewModel.swift; sourceTree = "<group>"; };
+		35A3C4CE23FA745100F2E2B2 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		35A3C4CF23FA745100F2E2B2 /* GridViewSnappingLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewSnappingLayout.swift; sourceTree = "<group>"; };
+		35A3C4D123FA745100F2E2B2 /* GridSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSectionController.swift; sourceTree = "<group>"; };
+		35A3C4D323FA745100F2E2B2 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		35A3C4D523FA745100F2E2B2 /* CellReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
+		35A3C4D623FA745100F2E2B2 /* RNLGridViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNLGridViewManager.m; sourceTree = "<group>"; };
+		35A3C4D723FA745100F2E2B2 /* GridViewSectionLoadingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewSectionLoadingDelegate.swift; sourceTree = "<group>"; };
+		35A3C4D823FA745100F2E2B2 /* RNSwiper-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNSwiper-Bridging-Header.h"; sourceTree = "<group>"; };
+		35A3C4D923FA745100F2E2B2 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		35A3C4DB23FA745100F2E2B2 /* RNLEventEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNLEventEmitter.m; sourceTree = "<group>"; };
+		35A3C4DC23FA745100F2E2B2 /* RNLEventEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNLEventEmitter.swift; sourceTree = "<group>"; };
+		35A3C4DD23FA745100F2E2B2 /* EventEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEmitter.swift; sourceTree = "<group>"; };
+		35A3C4DE23FA745100F2E2B2 /* RNSwiper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNSwiper.swift; sourceTree = "<group>"; };
+		35EA51DA23FA71C2007022C2 /* libRNSwiper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNSwiper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		71805300E15210E5F4940DFF /* Pods-RNSwiper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiper.debug.xcconfig"; path = "Target Support Files/Pods-RNSwiper/Pods-RNSwiper.debug.xcconfig"; sourceTree = "<group>"; };
+		E1C7DC5EBEC6DF13D4069A71 /* libPods-RNSwiper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNSwiper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35EA51D723FA71C2007022C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B752CCBFC7B1FC6CD66311DF /* libPods-RNSwiper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35A3C4C823FA745100F2E2B2 /* RNSwiper */ = {
+			isa = PBXGroup;
+			children = (
+				35A3C4C923FA745100F2E2B2 /* Cells */,
+				35A3C4CB23FA745100F2E2B2 /* View Models */,
+				35A3C4CE23FA745100F2E2B2 /* GridViewController.swift */,
+				35A3C4CF23FA745100F2E2B2 /* GridViewSnappingLayout.swift */,
+				35A3C4D023FA745100F2E2B2 /* Section Controllers */,
+				35A3C4D223FA745100F2E2B2 /* Models */,
+				35A3C4D423FA745100F2E2B2 /* Misc Utils */,
+				35A3C4D623FA745100F2E2B2 /* RNLGridViewManager.m */,
+				35A3C4D723FA745100F2E2B2 /* GridViewSectionLoadingDelegate.swift */,
+				35A3C4D823FA745100F2E2B2 /* RNSwiper-Bridging-Header.h */,
+				35A3C4D923FA745100F2E2B2 /* GridView.swift */,
+				35A3C4DA23FA745100F2E2B2 /* EventEmitter */,
+				35A3C4DE23FA745100F2E2B2 /* RNSwiper.swift */,
+			);
+			path = RNSwiper;
+			sourceTree = "<group>";
+		};
+		35A3C4C923FA745100F2E2B2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				35A3C4CA23FA745100F2E2B2 /* ColumnCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		35A3C4CB23FA745100F2E2B2 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				35A3C4CC23FA745100F2E2B2 /* GridViewModel.swift */,
+				35A3C4CD23FA745100F2E2B2 /* ColumnViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		35A3C4D023FA745100F2E2B2 /* Section Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35A3C4D123FA745100F2E2B2 /* GridSectionController.swift */,
+			);
+			path = "Section Controllers";
+			sourceTree = "<group>";
+		};
+		35A3C4D223FA745100F2E2B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35A3C4D323FA745100F2E2B2 /* Section.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35A3C4D423FA745100F2E2B2 /* Misc Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35A3C4D523FA745100F2E2B2 /* CellReusable.swift */,
+			);
+			path = "Misc Utils";
+			sourceTree = "<group>";
+		};
+		35A3C4DA23FA745100F2E2B2 /* EventEmitter */ = {
+			isa = PBXGroup;
+			children = (
+				35A3C4DB23FA745100F2E2B2 /* RNLEventEmitter.m */,
+				35A3C4DC23FA745100F2E2B2 /* RNLEventEmitter.swift */,
+				35A3C4DD23FA745100F2E2B2 /* EventEmitter.swift */,
+			);
+			path = EventEmitter;
+			sourceTree = "<group>";
+		};
+		35EA51D123FA71C2007022C2 = {
+			isa = PBXGroup;
+			children = (
+				35A3C4C823FA745100F2E2B2 /* RNSwiper */,
+				35EA51DB23FA71C2007022C2 /* Products */,
+				4A3F7B0C6A06207E7B514F04 /* Pods */,
+				A7B47E8A0C5D6DB6FC8501E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		35EA51DB23FA71C2007022C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35EA51DA23FA71C2007022C2 /* libRNSwiper.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A3F7B0C6A06207E7B514F04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71805300E15210E5F4940DFF /* Pods-RNSwiper.debug.xcconfig */,
+				102DD85F9FCFDEBDCACE887C /* Pods-RNSwiper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7B47E8A0C5D6DB6FC8501E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1C7DC5EBEC6DF13D4069A71 /* libPods-RNSwiper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35EA51D923FA71C2007022C2 /* RNSwiper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35EA51E123FA71C2007022C2 /* Build configuration list for PBXNativeTarget "RNSwiper" */;
+			buildPhases = (
+				14C4E9878205225A556ED4DF /* [CP] Check Pods Manifest.lock */,
+				35EA51D623FA71C2007022C2 /* Sources */,
+				35EA51D723FA71C2007022C2 /* Frameworks */,
+				35EA51D823FA71C2007022C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNSwiper;
+			productName = RNSwiper;
+			productReference = 35EA51DA23FA71C2007022C2 /* libRNSwiper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35EA51D223FA71C2007022C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "E-SOFT";
+				TargetAttributes = {
+					35EA51D923FA71C2007022C2 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 35EA51D523FA71C2007022C2 /* Build configuration list for PBXProject "RNSwiper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35EA51D123FA71C2007022C2;
+			productRefGroup = 35EA51DB23FA71C2007022C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35EA51D923FA71C2007022C2 /* RNSwiper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14C4E9878205225A556ED4DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNSwiper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35EA51D623FA71C2007022C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A3C4EB23FA745100F2E2B2 /* RNLEventEmitter.swift in Sources */,
+				35A3C4E823FA745100F2E2B2 /* GridViewSectionLoadingDelegate.swift in Sources */,
+				35A3C4E623FA745100F2E2B2 /* CellReusable.swift in Sources */,
+				35A3C4E723FA745100F2E2B2 /* RNLGridViewManager.m in Sources */,
+				35A3C4ED23FA745100F2E2B2 /* RNSwiper.swift in Sources */,
+				35A3C4E923FA745100F2E2B2 /* GridView.swift in Sources */,
+				35A3C4E323FA745100F2E2B2 /* GridViewSnappingLayout.swift in Sources */,
+				35A3C4E223FA745100F2E2B2 /* GridViewController.swift in Sources */,
+				35A3C4EC23FA745100F2E2B2 /* EventEmitter.swift in Sources */,
+				35A3C4E123FA745100F2E2B2 /* ColumnViewModel.swift in Sources */,
+				35A3C4E523FA745100F2E2B2 /* Section.swift in Sources */,
+				35A3C4EA23FA745100F2E2B2 /* RNLEventEmitter.m in Sources */,
+				35A3C4E423FA745100F2E2B2 /* GridSectionController.swift in Sources */,
+				35A3C4E023FA745100F2E2B2 /* GridViewModel.swift in Sources */,
+				35A3C4DF23FA745100F2E2B2 /* ColumnCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		35EA51DF23FA71C2007022C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35EA51E023FA71C2007022C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35EA51E223FA71C2007022C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71805300E15210E5F4940DFF /* Pods-RNSwiper.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K5P83CPG7;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/IGListKit\"/**",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/SDWebImage/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/RNSwiper/RNSwiper-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35EA51E323FA71C2007022C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 102DD85F9FCFDEBDCACE887C /* Pods-RNSwiper.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K5P83CPG7;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/IGListKit\"/**",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/SDWebImage/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/RNSwiper/RNSwiper-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35EA51D523FA71C2007022C2 /* Build configuration list for PBXProject "RNSwiper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35EA51DF23FA71C2007022C2 /* Debug */,
+				35EA51E023FA71C2007022C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35EA51E123FA71C2007022C2 /* Build configuration list for PBXNativeTarget "RNSwiper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35EA51E223FA71C2007022C2 /* Debug */,
+				35EA51E323FA71C2007022C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35EA51D223FA71C2007022C2 /* Project object */;
+}
