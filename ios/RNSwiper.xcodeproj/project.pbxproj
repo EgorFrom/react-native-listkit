@@ -22,6 +22,7 @@
 		35A3C4EB23FA745100F2E2B2 /* RNLEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4DC23FA745100F2E2B2 /* RNLEventEmitter.swift */; };
 		35A3C4EC23FA745100F2E2B2 /* EventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4DD23FA745100F2E2B2 /* EventEmitter.swift */; };
 		35A3C4ED23FA745100F2E2B2 /* RNSwiper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C4DE23FA745100F2E2B2 /* RNSwiper.swift */; };
+		B752CCBFC7B1FC6CD66311DF /* libPods-RNSwiper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C7DC5EBEC6DF13D4069A71 /* libPods-RNSwiper.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		102DD85F9FCFDEBDCACE887C /* Pods-RNSwiper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiper.release.xcconfig"; path = "Target Support Files/Pods-RNSwiper/Pods-RNSwiper.release.xcconfig"; sourceTree = "<group>"; };
 		35A3C4CA23FA745100F2E2B2 /* ColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCell.swift; sourceTree = "<group>"; };
 		35A3C4CC23FA745100F2E2B2 /* GridViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		35A3C4CD23FA745100F2E2B2 /* ColumnViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnViewModel.swift; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		35A3C4DD23FA745100F2E2B2 /* EventEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEmitter.swift; sourceTree = "<group>"; };
 		35A3C4DE23FA745100F2E2B2 /* RNSwiper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNSwiper.swift; sourceTree = "<group>"; };
 		35EA51DA23FA71C2007022C2 /* libRNSwiper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNSwiper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		71805300E15210E5F4940DFF /* Pods-RNSwiper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiper.debug.xcconfig"; path = "Target Support Files/Pods-RNSwiper/Pods-RNSwiper.debug.xcconfig"; sourceTree = "<group>"; };
+		E1C7DC5EBEC6DF13D4069A71 /* libPods-RNSwiper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNSwiper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B752CCBFC7B1FC6CD66311DF /* libPods-RNSwiper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +149,7 @@
 				35A3C4C823FA745100F2E2B2 /* RNSwiper */,
 				35EA51DB23FA71C2007022C2 /* Products */,
 				4A3F7B0C6A06207E7B514F04 /* Pods */,
+				A7B47E8A0C5D6DB6FC8501E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,8 +164,18 @@
 		4A3F7B0C6A06207E7B514F04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				71805300E15210E5F4940DFF /* Pods-RNSwiper.debug.xcconfig */,
+				102DD85F9FCFDEBDCACE887C /* Pods-RNSwiper.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7B47E8A0C5D6DB6FC8501E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1C7DC5EBEC6DF13D4069A71 /* libPods-RNSwiper.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35EA51E123FA71C2007022C2 /* Build configuration list for PBXNativeTarget "RNSwiper" */;
 			buildPhases = (
+				14C4E9878205225A556ED4DF /* [CP] Check Pods Manifest.lock */,
 				35EA51D623FA71C2007022C2 /* Sources */,
 				35EA51D723FA71C2007022C2 /* Frameworks */,
 				35EA51D823FA71C2007022C2 /* CopyFiles */,
@@ -213,6 +230,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14C4E9878205225A556ED4DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNSwiper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35EA51D623FA71C2007022C2 /* Sources */ = {
@@ -358,6 +400,7 @@
 		};
 		35EA51E223FA71C2007022C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71805300E15210E5F4940DFF /* Pods-RNSwiper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,7 +411,7 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"\"${PODS_ROOT}/Headers/Public\"/**",
-					"$(SRCROOT)/../../../ios/Pods/Headers/Public/IGListKit/**",
+					"\"${PODS_ROOT}/Headers/Public/IGListKit\"/**",
 					"$(SRCROOT)/../../../ios/Pods/Headers/Public/SDWebImage/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -382,6 +425,7 @@
 		};
 		35EA51E323FA71C2007022C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 102DD85F9FCFDEBDCACE887C /* Pods-RNSwiper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,7 +436,7 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"\"${PODS_ROOT}/Headers/Public\"/**",
-					"$(SRCROOT)/../../../ios/Pods/Headers/Public/IGListKit/**",
+					"\"${PODS_ROOT}/Headers/Public/IGListKit\"/**",
 					"$(SRCROOT)/../../../ios/Pods/Headers/Public/SDWebImage/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
